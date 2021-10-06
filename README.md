@@ -1,2 +1,2 @@
 # HolidayList
-A website that fetches holidays from HolidayAPI
+A React website that fetches from HolidayAPI.
