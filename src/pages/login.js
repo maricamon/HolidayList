@@ -133,8 +133,8 @@ function Login(props) {
     return (
       <div className="Login">
         {errorMsg && <div className="error-msg">{errorMsg}</div>}
-        <div className="header-main">
-          <div className="website-name">HolidayList</div>
+        <div className="login-area">
+          <div className="login-website-name">HolidayList</div>
           <div className="form">
             <Field
               type="text"

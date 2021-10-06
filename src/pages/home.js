@@ -374,39 +374,41 @@ function App(props) {
           onClick={changeCountry}
         />
         <div className="holidays-area">
-          <div className="radio-group">
-            <Radio
-              id="all"
-              name="display-scope"
-              value="all"
-              onChange={changeScope}
-              label="All"
-            />
-            <Radio
-              id="upcoming"
-              name="display-scope"
-              value="upcoming"
-              onChange={changeScope}
-              label="Upcoming"
-            />
+          <div className="display">
+            <div className="radio-group">
+              <Radio
+                id="all"
+                name="display-scope"
+                value="all"
+                onChange={changeScope}
+                label="All"
+              />
+              <Radio
+                id="upcoming"
+                name="display-scope"
+                value="upcoming"
+                onChange={changeScope}
+                label="Upcoming"
+              />
+            </div>
+            <div className="tablink-group">
+              <Button
+                onClick={changeHolidaysWithin}
+                id="month"
+                value="month"
+                label="This Month"
+                className="tablink"
+              />
+              <Button
+                onClick={changeHolidaysWithin}
+                id="year"
+                value="year"
+                label="This Year"
+                className="tablink"
+              />
+            </div>
+            <HolidayBoard holidays={holidays} year={year} />
           </div>
-          <div className="tablink-group">
-            <Button
-              onClick={changeHolidaysWithin}
-              id="month"
-              value="month"
-              label="This Month"
-              className="tablink"
-            />
-            <Button
-              onClick={changeHolidaysWithin}
-              id="year"
-              value="year"
-              label="This Year"
-              className="tablink"
-            />
-          </div>
-          <HolidayBoard holidays={holidays} year={year} />
         </div>
       </div>
     </div>

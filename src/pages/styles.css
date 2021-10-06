@@ -59,20 +59,13 @@
   padding: 10px;
 }
 
-.sidebar {
-  grid-area: sidebar;
-  height: 360px;
-  display: flex;
-  flex-direction: column;
-}
-
 .body {
   grid-area: body;
 }
 
 .scrolling-wrapper {
   display: flex;
-  height: 250px;
+  height: 300px;
   overflow-x: scroll;
   margin: 0 10px;
   background-color: #4caf50;
@@ -130,9 +123,17 @@
   font-size: 16px;
 }
 
+.display {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
 .holidays-area {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 10px;
   margin: 10px;
   margin-top: 0;
@@ -228,7 +229,6 @@
   background-color: #f9f9f9;
   border: none;
   font-size: 16px;
-  border: none;
   cursor: pointer;
   padding: 5px;
   width: 100%;
@@ -242,7 +242,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 400px;
+  height: 500px;
+}
+
+.login-area {
+  padding: 50px;
+  background-color: #96d822;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-website-name {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
 }
 
 .form {
@@ -250,6 +264,8 @@
   background-color: #e7e7e7;
   padding: 10px;
   display: inline-block;
+  margin: 10px;
+  align-self: center;
 }
 
 .field {
